@@ -1,0 +1,67 @@
+/* CSS para formularios */
+
+.body-form {
+    background-color: white;
+    font-family: 'Lato', Helvetica Neue, Arial, Sans-serif;
+}
+
+.error {
+    color: red;
+}
+.header {
+    color: #2f50b2 !important; 
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.label-form {
+    padding-left: 0px;
+    color: #2f50b2;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.d-checkbox{
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+.input-text {
+    color: black;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+    border:1px solid #2f50b2;
+    border-radius:5px;
+    padding: 5px 15px 5px 15px;
+    height: 45px;
+    width: 400px;
+    margin: 7px 0px 5px;
+}
+
+.i-submit {
+    color: white !important;
+    background-color: #2f50b2 !important;
+    border:1px solid #2f50b2 !important;
+    border-radius:5px !important;
+    padding: 5px 15px 5px 15px !important;
+    margin: 7px 0px 5px !important;
+    height: 45px;
+    width: 400px;
+}
+
+.input-checkbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    margin-right: 5px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
