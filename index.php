@@ -149,8 +149,9 @@
     <!-- Modal -->
     <script type="text/javascript">
     <!--//--><![CDATA[//><!-- 
+    //USAL
     $(document).ready(function() {
-        $('.openPopupG').on('click', function() {
+        $('.openPopupUS').on('click', function() {
             var dataURL = $(this).attr('data-href');
             // Load from form_group.php only the form for view using target #sign-form
             $('.modal-body').load(dataURL + ' #group-form', function() {
@@ -158,7 +159,6 @@
             });
         });
     });
-
     // Rebind form submit interceptor after each ajax
     $(document).ajaxComplete(function() {
         $('#group-form').submit(function() {
@@ -171,30 +171,65 @@
             return false;
         });
     });
+    //NEXT
     $(document).ready(function() {
-        $('.openPopupS').on('click', function() {
+        $('.openPopupN').on('click', function() {
             var dataURL = $(this).attr('data-href');
             // Load from form_group.php only the form for view using target #sign-form
-            $('.modal-body').load(dataURL + ' #solo-form', function() {
+            $('.modal-body').load(dataURL + ' #next-form', function() {
                 $('#myModal').modal({show: true});
             });
         });
     });
     $(document).ajaxComplete(function() {
-        $('#solo-form').submit(function() {
+        $('#next-form').submit(function() {
             // Need to use $.post() instead $.load() becouse your php code manage only $_POST
-            $.post('form_ind.php', $(this).serialize() + '&' + $.param({'submit': true}), function(response) {
+            $.post('form_next.php', $(this).serialize() + '&' + $.param({'submit': true}), function(response) {
                 // Load from form_group.php only the new form view based on erros
-                $('.modal-body').html($(response).filter('#solo-form'));
+                $('.modal-body').html($(response).filter('#next-form'));
             });
-
+            return false;
+        });
+    });
+    //UPV
+    $(document).ready(function() {
+        $('.openPopupUP').on('click', function() {
+            var dataURL = $(this).attr('data-href');
+            // Load from form_group.php only the form for view using target #sign-form
+            $('.modal-body').load(dataURL + ' #upv-form', function() {
+                $('#myModal').modal({show: true});
+            });
+        });
+    });
+    $(document).ajaxComplete(function() {
+        $('#upv-form').submit(function() {
+            // Need to use $.post() instead $.load() becouse your php code manage only $_POST
+            $.post('form_upv.php', $(this).serialize() + '&' + $.param({'submit': true}), function(response) {
+                // Load from form_group.php only the new form view based on erros
+                $('.modal-body').html($(response).filter('#upv-form'));
+            });
             return false;
         });
     });
     //--><!]]>
     </script>
     <!-- Smooth scroll-->
-    
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+        $(document).ready(function(){
+				$('a[href^="#"]').on('click', function (e) {
+					e.preventDefault();
+
+					var target = this.hash;
+					var $target = $(target);
+
+					$('html, body').animate({
+						'scrollTop': ($target.offset().top-25)
+					}, 1200, 'swing');
+				});
+			});
+    //--><!]]>
+    </script>
 </head>
 <body class="html front not-logged-in no-sidebars page-node parallax-active sff-7 slff-7 hff-7 pff-7 form-style-1 wide" >
   <div id="skip-link">
@@ -218,7 +253,7 @@
                         <div id="header-inside-left" class="clearfix">
 
                                                 <div id="logo">
-                        <a href="index.php" title="Home" rel="home"> <h2 style="margin-bottom:0px!important; color:white; text-align:right;" class="titulo">Cogs for</h2><br><h2 style="margin-top:-5px!important; font-weight:bold; color:white; text-align:right;"  class="titulo">Good</h2><!--<img src="styles/icons/logo.png" alt="Home" />--> </a>
+                        <a href="index.php" title="Home" rel="home"> <h2 style="margin-bottom:0px!important;" class="titulo">Cogs for</h2><br><h2 style="margin-top:-15px!important; font-weight:bold;"  class="titulo">Good</h2><!--<img src="styles/icons/logo.png" alt="Home" />--> </a>
                         </div>
 
                     </div>
@@ -293,7 +328,7 @@
         
 
     <!-- #page -->
-    <div id="page" class="clearfix">
+    <div id="page" class="clearfix wrapper">
 
         <!-- #messages-console -->
                 <!-- EOF: #messages-console -->
@@ -305,7 +340,7 @@
             <div class="region region-top-content">
             <div id="block-block-2" class="block block-block desafio clearfix">
 
-                <h2 id="desafio" class="title">Desafío</h2>
+                <h2 id="desafio" class="title post_article">Desafío</h2>
   
                 <div class="content">
                 <div class="container">
@@ -316,16 +351,16 @@
             
             <div id="block-block-3" class="block block-block premio-div dark clearfix">
 
-                            <h2 id="premio" class="title">Curso de captación para los asistentes al Hackathon</h2>
+                            <h2 id="curso-formativo" class="title post_article">Curso de captación para los asistentes al Hackathon</h2>
   
                               <div class="content">
                                 <div class="col-md-12 sede">
                                 <div class="col-md-4 curso">
                                     <h3>USAL
                                     <p></p>
-                                    <p class="curso_text">Edificio Multiusos I+D+I Sala 11.1</p>
+                                    <p class="curso_text">Edificio Multiusos I+D+i | Sala 11.1</p>
                                     <p class="curso_text">14 de marzo</p>
-                                    <p class="curso_text">11:00-14:30 (alumnos)   16:00-17:00 (profesores)</p></h3>
+                                    <p class="curso_text">11:00-14:30 (alumnos) | 16:00-17:00 (profesores)</p></h3>
                                     
                                 </div>
                                 <div class="col-md-4 curso">
@@ -342,7 +377,7 @@
                              </div>
                         </div>
             <div id="block-block-4" class="block block-block premio-div dark clearfix">
-                <h2 id="premio" class="title">Premio</h2>
+                <h2 id="premio" class="title post_article">Premio</h2>
   
                 <div class="content">
                 <div class="container dark">
@@ -356,12 +391,12 @@
 		        </div>-->
 		        <div class="col-md-6 col-1 text-center">
 			     <img src="styles/icons/icono-premio.png" alt="Premio">
-			         <p>A LOS PARTICIPANTES DEL HACKATON se le hará entrega de un diploma y podrán enviar un artículo a la 15th International Conference on Distributed Computing and Artificial Intelligence (DCAI)
+			         <p>A LOS PARTICIPANTES DEL HACKATHON se le hará entrega de un diploma y podrán enviar un artículo a la 15th International Conference on Distributed Computing and Artificial Intelligence (DCAI).
 			         </p>
 		        </div>
 		       <div class="col-md-6 col-2 text-center">
 			         <img src="styles/icons/icono-hotel.png" alt="Hotel">
-			         <p>A las 6 mejores propuestas se les <strong>pagará el alojamiento</strong> y recibirán una beca de viaje de <strong>100€</strong></p>
+			         <p>A las 6 mejores propuestas se les <strong>pagará el alojamiento</strong> y recibirán una beca de viaje de <strong>100€</strong> para asistir al evento.</p>
 		       </div>
 	          </div>
                 </div>  
@@ -370,20 +405,22 @@
         
         <div id="block-block-5" class="block block-block gradient clearfix">
 
-            <h2 id="participa" class="title">Participa</h2>
-  
+            <h2 id="participa" class="title post_article">Participa</h2>
               <div class="content">
                 <div class="container">
+                <p style="color:#fff; padding-bottom:0px;" class="text-center">Formulario de inscripción</p>
                 <div class="col-md-12 participa">
                     <div class="col-md-4 col-1 text-center">
                         <a class="btn-primary btn" href="https://goo.gl/forms/XMzbs2zXKKGx4b413"><span>USAL</span></a>
+                        <!--<a class="btn-primary btn openPopupUS" data-href="form_group.php"><span>NEXT</span></a>-->
                     </div>
                     <div class="col-md-4 col-2 text-center">
                         <a class="btn-primary btn"><span>NEXT</span></a>
-                        <!--<a class="btn-primary btn openPopupG" data-href="form_group.php"><span>NEXT</span></a>-->
+                        <!--<a class="btn-primary btn openPopupN" data-href="form_next.php"><span>NEXT</span></a>-->
                     </div>
                     <div class="col-md-4 col-3 text-center">
                         <a class="btn-primary btn" ><span>UPV</span></a>
+                        <!--<a class="btn-primary btn openPopupUP" data-href="form_upv.php"><span>UPV</span></a>-->
                     </div>
                     <!-- Modal -->
                         <div class="modal fade" id="myModal" role="dialog">
@@ -423,7 +460,7 @@
                         <div class="region region-content">
                         <div id="block-block-3" class="block block-block sede-div clearfix">
 
-                            <h2 id="sedes" class="title">Sedes</h2>
+                            <h2 id="sedes" class="title post_article">Sedes</h2>
   
                               <div class="content">
                                 <div class="col-md-12 sede">
@@ -431,7 +468,7 @@
                                     <h3>Salamanca
                                     <p></p>
                                     <p class="sede_text">21/03/2018</p>
-                                    <p class="sede_text">Edificio Multiusos I+D+I</p>
+                                    <p class="sede_text">Edificio Multiusos I+D+i</p>
                                     <p class="sede_text">Calle Espejo s/n</p></h3>
                                     
                                 </div>

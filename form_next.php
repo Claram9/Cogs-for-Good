@@ -59,13 +59,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 
-  /*if (empty($_POST["idea"])) {
-    $ideaErr = "Your idea is required";
-    
-  } else {
-    $idea = test_input($_POST["idea"]);
-  }*/
-
   if (empty($_POST["team"])) {
     $teamErr = "Team is required";
   } else {
@@ -88,14 +81,8 @@ function test_input($data) {
 
 
 ?>
-<form class="form" id="group-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form class="form" id="next-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
   <h3 class="header">Take part as a team</h3>  
-       
-	 <!--<label class="label-form" for="idea">Your idea <br>
-        <input class="input-text" type="text" name="idea" value="<?php //echo $idea;?>" />
-     </label> <br>
-     <label class="error"><?php //echo $ideaErr;?></label>
-	 <br><br>-->
 
 	 <label class="label-form" for="team">Descripción de su equipo ... <br>
         <input class="input-text" type="text" name="team" value="<?php echo $team;?>" />
@@ -110,7 +97,7 @@ function test_input($data) {
 	 <br><br>            
       
      <label class="label-form" for="email">E-mail <br>
-        <input class="input-text" type="text" placeholder="xxx@usal.es o xxx@upsa.es" name="email" value="<?php echo $email;?>">
+        <input class="input-text" type="text" placeholder="xxx@nextibs.com" name="email" value="<?php echo $email;?>">
      </label><br>
      <label class="error"><?php echo $emailErr;?></label>
 	 <br><br>
