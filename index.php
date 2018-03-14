@@ -351,9 +351,10 @@
             
             <div id="block-block-3" class="block block-block premio-div dark clearfix">
 
-                            <h2 id="curso-formativo" class="title post_article">Curso de captación para los asistentes al Hackathon</h2>
+                            <h2 id="curso-formativo" class="title post_article">Curso de capacitación para los asistentes al Hackathon</h2>
   
                               <div class="content">
+                                <p style="color:#fff; padding-bottom:0px; padding-left:30px;padding-right:30px;" class="text-center">Las personas que se registren recibirán de forma gratuita un curso de capacitación para llevar a cabo posteriormente el HACKATHON. En él, se revisarán los los servicios disponibles en IBM Cloud (Iaas, Runtimes, DevOps, Analytics, IoT, Watson,Bluemix)  y los <a href="https://www.ibm.com/watson/" style="color:darkgrey!important;">Servicios Cognitivos Watson</a>.</p>
                                 <div class="col-md-12 sede">
                                 <div class="col-md-4 curso">
                                     <h3>USAL
@@ -364,12 +365,15 @@
                                     
                                 </div>
                                 <div class="col-md-4 curso">
-                                    <h3>Madrid
+                                    <h3>UPV
                                     <p></p>
-                                    <p class="curso_text">Próximamente</p></h3>
+                                        <p class="curso_text">Escuela Técnica Superior de Ingeniería Informática</p>
+                                        <p class="curso_text">Edificio 1G | Aula Anita Borg -1G.0.0</p>
+                                        <p class="curso_text">20 de marzo | 10:30 a 13:30h</p>
+                                        <p class="curso_text">Más información <a href="http://gti-ia.upv.es/sma/events/IBM/index.php" style="color:#2f50b2!important;">aquí</a></p></h3>
                                 </div>
                                 <div class="col-md-4 curso">
-                                    <h3>UPV
+                                    <h3>Madrid
                                     <p></p>
                                     <p class="curso_text">Próximamente</p></h3>
                                 </div>
@@ -414,13 +418,13 @@
                         <a class="btn-primary btn" href="https://goo.gl/forms/XMzbs2zXKKGx4b413"><span>USAL</span></a>
                         <!--<a class="btn-primary btn openPopupUS" data-href="form_group.php"><span>NEXT</span></a>-->
                     </div>
+                    <div class="col-md-4 col-3 text-center">
+                        <a class="btn-primary btn" href="http://gti-ia.upv.es/sma/events/IBM/registro.php"><span>UPV</span></a>
+                        <!--<a class="btn-primary btn openPopupUP" data-href="form_upv.php"><span>UPV</span></a>-->
+                    </div>
                     <div class="col-md-4 col-2 text-center">
                         <a class="btn-primary btn"><span>NEXT</span></a>
                         <!--<a class="btn-primary btn openPopupN" data-href="form_next.php"><span>NEXT</span></a>-->
-                    </div>
-                    <div class="col-md-4 col-3 text-center">
-                        <a class="btn-primary btn" ><span>UPV</span></a>
-                        <!--<a class="btn-primary btn openPopupUP" data-href="form_upv.php"><span>UPV</span></a>-->
                     </div>
                     <!-- Modal -->
                         <div class="modal fade" id="myModal" role="dialog">
@@ -472,13 +476,15 @@
                                     <p class="sede_text">Calle Espejo s/n</p></h3>
                                     
                                 </div>
-                                <div class="col-md-4 madrid">
-                                    <h3>Madrid
-                                    <p></p>
-                                    <p class="sede_text">Próximamente</p></h3>
-                                </div>
                                 <div class="col-md-4 valencia">
                                     <h3>Valencia
+                                    <p></p>
+                                    <p class="sede_text">22/03/2018</p>
+                                    <p class="sede_text">9 a 14h y de 15 a 18h</p>
+                                    <p class="sede_text">Más información <a href="http://gti-ia.upv.es/sma/events/IBM/index.php" style="color:#2f50b2!important;">aquí</a></p></h3>
+                                </div>
+                                <div class="col-md-4 madrid">
+                                    <h3>Madrid
                                     <p></p>
                                     <p class="sede_text">Próximamente</p></h3>
                                 </div>

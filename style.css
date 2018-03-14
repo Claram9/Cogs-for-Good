@@ -2592,10 +2592,3 @@ ul.links.inline {
 	padding: 25px;
 	padding-top: 6px;
 }
-
-/*Menu fixed and scroll*/
-.fixed{
-    position:fixed; 
-    top:-10px;
-    background-color:#2f50b2;
-}
