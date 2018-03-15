@@ -471,8 +471,8 @@
                                 <div class="col-md-4 salamanca">
                                     <h3>Salamanca
                                     <p></p>
-                                    <p class="sede_text">21/03/2018</p>
-                                    <p class="sede_text">Edificio Multiusos I+D+i</p>
+                                    <p class="sede_text">21/03/2018 | 10:00 a 17:00</p>
+                                    <p class="sede_text">Edificio Multiusos I+D+i | Sala 12.2</p>
                                     <p class="sede_text">Calle Espejo s/n</p></h3>
                                     
                                 </div>
